@@ -1,0 +1,26 @@
+AITA text classifier — held-out test results
+
+Training / validation / test rows: 27230 / 5835 / 5835
+Validation-selected threshold: 0.50
+Validation macro F1: 0.643
+
+Metric                        Model    Majority baseline
+accuracy                      0.801                0.860
+balanced_accuracy             0.653                0.500
+macro_f1                      0.634                0.462
+asshole_f1                    0.387                0.000
+roc_auc                       0.744                0.500
+average_precision             0.326                0.140
+
+                             precision    recall  f1-score   support
+
+Not the asshole (NTA / NAH)      0.905     0.858     0.881      5016
+        Asshole (YTA / ESH)      0.341     0.448     0.387       819
+
+                   accuracy                          0.801      5835
+                  macro avg      0.623     0.653     0.634      5835
+               weighted avg      0.826     0.801     0.812      5835
+
+Confusion matrix: rows=true, columns=predicted; order=[0,1]
+[[4306  710]
+ [ 452  367]]

@@ -1,0 +1,17 @@
+# Python environment and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local files and credentials
+.DS_Store
+.env
+.env.*
+*.zip
+
+# Large dataset and generated model
+data/*.csv
+outputs/*.joblib
+
+reddit_aita_moral_judgments.csv
